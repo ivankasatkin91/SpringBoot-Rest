@@ -1,4 +1,4 @@
-package com.ivankasatkin.bootstrap_crud_security.app;
+package com.ivankasatkin.spring_boot.rest.app;
 
 import com.ivankasatkin.spring_boot.rest.model.User;
 import com.ivankasatkin.spring_boot.rest.repository.UserRepository;

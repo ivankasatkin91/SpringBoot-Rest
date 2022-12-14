@@ -1,4 +1,4 @@
-package com.ivankasatkin.bootstrap_crud_security.app;
+package com.ivankasatkin.spring_boot.rest.app;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
