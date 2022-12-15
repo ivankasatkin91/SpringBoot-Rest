@@ -136,28 +136,28 @@
                                                     <label for="new-name" class="my-n3"><h6><strong>Name</strong></h6>
                                                     </label>
                                                     <input type="text" class="form-control"
-                                                           id="new-name" name="newName" placeholder="First name">
+                                                           id="new-name" name="newName" placeholder="First name" required>
                                                 </div>
 
                                                 <div class="form-group col-md-4 offset-md-4">
                                                     <label for="new-surname" class="my-n3"><h6><strong>Surname</strong>
                                                     </h6></label>
                                                     <input type="text" class="form-control"
-                                                           id="new-surname" name="newSurname" placeholder="Last name">
+                                                           id="new-surname" name="newSurname" placeholder="Last name" required>
                                                 </div>
 
                                                 <div class="form-group col-md-4 offset-md-4">
                                                     <label for="new-login" class="my-n3"><h6><strong>Login</strong></h6>
                                                     </label>
                                                     <input type="text" class="form-control"
-                                                           id="new-login" name="newLogin" placeholder="Username">
+                                                           id="new-login" name="newLogin" placeholder="Username" required>
                                                 </div>
 
                                                 <div class="form-group col-md-4 offset-md-4">
                                                     <label for="new-password" class="my-n3"><h6>
                                                         <strong>Password</strong></h6></label>
                                                     <input type="password" class="form-control"
-                                                           id="new-password" name="newPassword" placeholder="Password">
+                                                           id="new-password" name="newPassword" placeholder="Password" required>
                                                 </div>
 
                                                 <div class="form-group col-md-4 offset-md-4">
@@ -165,7 +165,7 @@
                                                         <strong>Role</strong></h6>
                                                     </label>
                                                     <select class="custom-select" size="2" id="new-assigned_roles"
-                                                            multiple="multiple">
+                                                            multiple="multiple" required>
                                                         <option value="1" text="ADMIN">ADMIN</option>
                                                         <option value="2" text="USER">USER</option>
                                                     </select>
@@ -239,7 +239,8 @@
                             <input type="text"
                                    class="form-control"
                                    id="edit-name"
-                                   name="name">
+                                   name="name"
+                                   required>
                         </div>
 
                         <div class="form-group">
@@ -253,7 +254,8 @@
                             <input type="text"
                                    class="form-control"
                                    id="edit-surname"
-                                   name="surname">
+                                   name="surname"
+                                   required>
                         </div>
 
                         <div class="form-group">
@@ -267,7 +269,8 @@
                             <input type="text"
                                    class="form-control"
                                    id="edit-login"
-                                   name="login">
+                                   name="login"
+                                   required>
                         </div>
 
                         <div class="form-group">
@@ -282,7 +285,8 @@
                                    class="form-control"
                                    id="edit-password"
                                    name="pass"
-                                   placeholder="New password">
+                                   placeholder="New password"
+                                   required>
                         </div>
 
                         <div class="form-group">
@@ -294,7 +298,7 @@
                                     size="2"
                                     id="edit-assigned_roles"
                                     name="rls"
-                                    multiple>
+                                    multiple required>
                                 <option value="1" text="ADMIN">ADMIN</option>
                                 <option value="2" text="USER">USER</option>
 

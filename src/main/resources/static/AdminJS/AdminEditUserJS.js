@@ -10,7 +10,7 @@ const rolesToEdit = document.getElementById('edit-assigned_roles');
 async function editData(id) {
 
     await fetch(`/rest/admin/users/${id}`)
-        .then(response => response.json())
+        .then(mainResponseErrorHandler)
         .then(entry => {
             editId.value = `${entry.id}`;
             editName.value = `${entry.name}`;
@@ -55,7 +55,7 @@ async function editUser(event) {
             clearPassword();
             $("#edit-close").click();
             showAllUsers();
-        }).catch(error => alert(error));
+        })
 }
 
 function clearPassword() {

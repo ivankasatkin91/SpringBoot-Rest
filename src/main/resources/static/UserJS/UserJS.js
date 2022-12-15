@@ -1,7 +1,7 @@
 async function displayUserData() {
 
     await fetch('/rest/user_page')
-        .then(response => response.json())
+        .then(personalResponseErrorHandler)
         .then(json => getUserData(json))
         .catch(error => alert(error));
 }
@@ -24,6 +24,11 @@ function getUserData(user) {
          </tr>`;
 
     document.getElementById('user_info').innerHTML = row;
+}
+
+function personalResponseErrorHandler(response) {
+    if (!response.ok) throw Error(response.statusText)
+    return response.json();
 }
 
 displayUserData();

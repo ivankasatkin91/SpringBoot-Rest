@@ -8,7 +8,7 @@ const delLogin = document.getElementById('delete-login');
 async function deleteData(id) {
 
     await fetch(`/rest/admin/users/${id}`)
-        .then(response => response.json())
+        .then(mainResponseErrorHandler)
         .then(entry => {
             delId.value = `${entry.id}`;
             delName.value = `${entry.name}`;
@@ -35,7 +35,6 @@ async function deleteUser(event) {
             $("#delete-close").click();
             showAllUsers();
         })
-        .catch(error => alert(error));
 }
 
 

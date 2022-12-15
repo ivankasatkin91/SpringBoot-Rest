@@ -2,7 +2,7 @@
 async function showAllUsers() {
 
     await fetch('/rest/admin/users')
-        .then(response => response.json())
+        .then(mainResponseErrorHandler)
         .then(json => getAllUsers(json))
         .catch(error => alert(error));
 }
@@ -41,6 +41,11 @@ function getAllUsers(usersList) {
             </tr>`;
     }
     document.getElementById('admin_main').innerHTML = table;
+}
+
+function mainResponseErrorHandler(response) {
+    if (!response.ok) throw Error(response.statusText)
+    return response.json();
 }
 
 showAllUsers();

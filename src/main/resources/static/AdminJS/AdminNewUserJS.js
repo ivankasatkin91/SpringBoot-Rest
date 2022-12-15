@@ -32,7 +32,6 @@ async function newUserEntry(event) {
         }).then(() => {
             saveForm.reset();
             showAllUsers();
-            $("#all-users-tab").click()})
-            .catch(error => alert(error));
+            $("#all-users-tab").click()});
 }
 
